@@ -1,0 +1,17 @@
+$fuente: 'roboto';
+$color-fondo: #262e3e;
+$color-texto: #cdd1de;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+
+body {
+    background-color: $color-fondo;
+    font-family: $fuente;
+    overflow-x: hidden;
+}

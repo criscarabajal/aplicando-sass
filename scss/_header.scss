@@ -1,0 +1,57 @@
+$fuente: 'roboto';
+$color-fondo: #262e3e;
+$color-texto: #cdd1de;
+
+header {
+    position: sticky;
+        top: 0px;
+        z-index: 2;
+        background-color: #262e3e;
+        padding: 25px 20px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 3em;
+}
+
+.logo-header {
+    width: 33%;
+    grid-column: 1 / 2;
+    
+}
+
+nav {
+    grid-column: 2 / 3;
+    display: flex;
+    align-items: center;
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        li {
+            margin: 0 1em 0 1em;
+            a {
+                color: $color-texto;
+                text-decoration: none;
+            } 
+        } 
+    }    
+}
+
+ /* HEADER: iconos */
+    
+ .iconos-rrss-header {
+    grid-column: 3 / 4;
+    position: relative;
+    left: 60%;
+    display: flex;
+    align-items: center;
+    li {
+        display: inline;
+        margin: 1em;
+        img {
+            width: 25px; 
+        }
+    }
+}
+
