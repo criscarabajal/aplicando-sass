@@ -1,0 +1,42 @@
+
+/*aca use maps*/
+$fuentes: (
+    fuente1: 'montserrat',
+    fuente2: 'gotham',
+);
+
+@each $class, $tipo in $fuentes {
+    .#{$class} {
+        font-family: $tipo;
+    }
+}
+
+//extend
+/*extend*/
+.veok {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20em; 
+}
+.mati {
+    @extend .veok;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+//mixin
+/* mixin */
+@mixin estructura-flex ($display, $justify-content, $align-items, $margin-top) {
+    display: $display;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    margin-top: $margin-top;
+}
+
+.condicion-1 {
+    @include estructura-flex(flex, center, center, 6em);
+}
+
+

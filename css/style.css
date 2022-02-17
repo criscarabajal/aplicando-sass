@@ -454,3 +454,29 @@ footer {
       footer .redes-footer .iconos-footer a img {
         width: 50px;
         padding-right: 10px; }
+
+/*aca use maps*/
+.fuente1 {
+  font-family: "montserrat"; }
+
+.fuente2 {
+  font-family: "gotham"; }
+
+/*extend*/
+.veok, .mati {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20em; }
+
+.mati {
+  flex-direction: row-reverse;
+  flex-wrap: wrap; }
+
+/* mixin */
+.condicion-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6em; }
